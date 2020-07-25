@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body id='bod'>
+   <div class="container">
+    <div class="you">
+        <div class="youpic">
+            <h1>YOU</h1>
+            <img id="yourPic" src="" alt="">
+        </div>
+        <div class="radio">
+                <div class="radio-cont">
+                    <input type="radio" name="hand" id="rock" value="rock">
+                    <label for="rock">Rock</label>
+                </div>
+                <div class="radio-cont">
+                    <input type="radio" name="hand" id="paper" value="paper">
+                    <label for="paper">Paper</label>
+                </div>
+                <div class="radio-cont">
+                    <input type="radio" name="hand" id="scissor" value="scissor">
+                    <label for="scissor">Scissors</label>
+                </div>
+        </div>
+        <div class="btn">
+            <button onclick="shoot()">Shoot</button>
+        </div>
+    </div>
+    <div class="opponent">
+        <h1>OPPONENT</h1>
+        <img id="oppPic" src="" alt="">
+    </div>
+    <div class="score">
+        <h1>SCORE:</h1>
+        <h2 id='tally'>0 - 0</h2>
+    </div>
+   </div>
+   <div class="back" id="transition"></div>
+</body>
+</html>
